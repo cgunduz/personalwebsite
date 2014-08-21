@@ -7,8 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <meta name="description" content="Treble theme - One Page Responsive Theme - Gridelicious.net">
-    <title>Treble - One Page Responsive Theme - Gridelicious.net</title>
+    <meta name="description" content="Doğan Cem Gündüz, personal website of a software developer">
+    <title>Cem Gündüz</title>
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png">
@@ -30,7 +30,7 @@
                 <div class="span12 center">
                     <!-- LOGO -->
                     <a class="brand pull-left" href="../../../../source">
-                        <img src="../assets/images/logo.png" alt="Treble">
+                        <img src="../assets/images/logo.png" alt="D. Cem Gündüz">
                     </a>
                     <!-- END LOGO -->
 
@@ -55,11 +55,11 @@
                     
                     <!-- SOCIAL ICONS -->
                     <div class="social-icons hover-big pull-right">
-                        <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                        <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                        <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                        <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                        <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                        <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                        <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                        <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                        <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                        <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
                     </div>
                     <!-- END SOCIAL ICONS -->
                 </div>
@@ -93,23 +93,23 @@
                         <div class="line-divider" id="welcome-messages">
                             <ul class="slides">
                                 <li>
-                                    <h1>Hello Treble</h1>
+                                    <h1>D. Cem Gunduz</h1>
                                 </li>
                                 <li>
-                                    <h1>Fresh & Clean</h1>
+                                    <h1>Istanbul, Turkey</h1>
                                 </li>
                                 <li>
-                                    <h1>Creative & Fun</h1>
+                                    <h1>Software Enthusiast</h1>
                                 </li>
                             </ul>
                         </div>
-                        <p>One page responsive HTML5 template.</p>
+                        <p>Personal website of a software developer</p>
                         <div class="social-icons sicon-white bordered">
-                            <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                            <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                            <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                            <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                            <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                            <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                            <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                            <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                            <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                            <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
                         </div>
                     </div>
                 </div>
@@ -768,11 +768,11 @@
                         <br/>
                         <h5>Get social</h5>
                         <div class="social-icons sicon-white bordered">
-                            <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                            <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                            <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                            <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                            <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                            <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                            <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                            <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                            <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                            <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
                         </div>
                     </div>
                     <!-- End Contact information -->

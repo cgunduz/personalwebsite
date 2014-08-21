@@ -110,8 +110,12 @@
 .page-welcome .centralized {
   z-index: 2;
 }
-/**   PAGE | WORK*/.portfolio-items {
-  /*    * Filtering configuration    */
+/*
+*   PAGE | WORK
+*/.portfolio-items {
+  /*
+    * Filtering configuration
+    */
 }
 .portfolio-items a {
   position: relative;
@@ -235,7 +239,9 @@
 .portfolio-item-details .submenu span:hover {
   text-decoration: none;
 }
-/**   PAGE | FEATURES*/.page-features {
+/*
+*   PAGE | FEATURES
+*/.page-features {
   position: relative;
   background: url(../images/pages/features/q_bck.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
@@ -618,7 +624,9 @@
 .page-contact form .media {
   padding-top: 24px;
 }
-/**   PAGE | CLIENTS*/.page-clients .row-fluid {
+/*
+*   PAGE | CLIENTS
+*/.page-clients .row-fluid {
   padding-bottom: 40px;
   padding-top: 15px;
 }
@@ -722,7 +730,9 @@
 #navigation .mobile-menu:hover .icon-bar {
   background-color: #4e808e;
 }
-/**   FOOTER*/.pages footer {
+/*
+*   FOOTER
+*/.pages footer {
   padding-top: 30px;
   padding-bottom: 60px;
   text-align: center;
@@ -946,10 +956,10 @@ footer {
 .sicon-linkedin i {
   background-position: -277px -1px;
 }
-.sicon-youtube i {
+.sicon-github i {
   background-position: -317px -1px;
 }
-.sicon-pinterest i {
+.sicon-stackoverflow i {
   background-position: -356px -1px;
 }
 /*
