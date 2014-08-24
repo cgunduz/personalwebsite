@@ -45,9 +45,9 @@
                     <!-- MAIN MENU -->
                     <ul id="main-menu" class="nav-collapse collapse">
                         <li><a href="#page-welcome">Home</a></li>
-                        <li><a href="#page-work">Work</a></li>
-                        <li><a href="#page-features">Features</a></li>
                         <li><a href="#page-about">About</a></li>
+                        <li><a href="#page-features">Skills & Interests</a></li>
+                        <li><a href="#">CV</a></li>
                         <li><a href="#page-blog">Blog</a></li>
                         <li><a href="#page-contact">Contact</a></li>
                     </ul>
@@ -79,12 +79,12 @@
                         <!-- Animated logo -->
                         <div class="logo">
                             <div class="scrollNormal">
-                                <a href="#page-work">
+                                <a href="#page-about">
                                     <img src="../assets/images/pages/welcome/logo_welcome.png" width="140" height="140" alt="Treble">
                                 </a>
                             </div>
                             <div class="scrollDown">
-                                <a href="#page-work">
+                                <a href="#page-about">
                                     <img src="../assets/images/pages/welcome/logo2_welcome.png" width="140" height="140" alt="Treble">
                                 </a>
                             </div> 
@@ -117,186 +117,52 @@
         </div>
     </div>
     <!-- END PAGE | Welcome -->
-   
-    <!-- PAGE | WORK -->
-    <div class="pages page-work" id="page-work">
+
+    <!-- PAGE | ABOUT -->
+    <div class="pages page-about" id="page-about">
         <div class="container">
             <!-- Header -->
             <header>
-                <h4 class="line-divider">Work</h4>
-                <h1>Portfolio</h1>
-                <!-- Short desciption about Work in general -->
+                <h4 class="line-divider">About</h4>
+                <h1>Dizayn Adına başlıktan vazgeçemedim</h1>
+
                 <div class="row">
-                    <div class="span8 offset2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                        </p>
-                    </div>
-                </div>
-                    
-                <!-- Sub menu -->
-                <!-- 
-                Params: 
-                    plugin-filter: Defines links for filtering.
-                -->
-                <nav class="submenu">
-                    <ul>
-                        <li>
-                            <a href="#" class="plugin-filter active" data-filter="all">All</a>
-                        </li>
-                        <li>
-                            <a href="#" class="plugin-filter" data-filter="typography">Typography</a>
-                        </li>
-                        <li>
-                            <a href="#" class="plugin-filter" data-filter="illustration">Illustration</a>
-                        </li>
-                        <li>
-                            <a href="#" class="plugin-filter" data-filter="branding">Branding</a>
-                        </li>
-                        <li>
-                            <a href="#" class="plugin-filter" data-filter="photography">Photography</a>
-                        </li>
+                    <ul class="thumbnails about-items">
+                    <li  class="span4 center">
+                        <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>
+                            D. Cem Gündüz<br/>
+                            <small>Developer</small>
+                        </h5>
+                    </li>
+
+
+                    <p class="smallFontBy08">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                       </p>
+
                     </ul>
-                </nav>
+                </div>
             </header>
             <!-- End Header -->
-                
-            <!-- Article -->
-            <article>
-                <!-- Portfolio items
-                    Params: 
-                        plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
-                        portfolio-items: Customise portfolio items for hover effect.
-                -->
-                <ul class="thumbnails plugin-filter-elements portfolio-items">
-                    <li class="span4 mix illustration branding">
-                        <a href="#pages/portfolio/project_1.html" data-destination="portfolio-items" data-insert="before">
-                            <!-- Portfolio image -->
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            
-                            <!-- Portfolio name, activated on hover -->
-                            <div class="portfolio-overlay">
-                                <h4>Vita Worldwide</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix branding typography illustration">
-                        <a href="#pages/portfolio/project_2.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Kokong Magazine</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix photography illustration">
-                        <a href="#pages/portfolio/project_3.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Escape The Grid 2</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix photography">
-                        <a href="#pages/portfolio/project_4.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Avatar</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix photography typography branding">
-                        <a href="#pages/portfolio/project_5.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>A Brighter Horizon</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix photography">
-                        <a href="#pages/portfolio/project_6.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>The Travelers</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix illustration branding typography">
-                        <a href="#pages/portfolio/project_7.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Tron 3</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix photography illustration">
-                        <a href="#pages/portfolio/project_8.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Vimeo Staff Picke - Rio</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix illustration branding">
-                        <a href="#pages/portfolio/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Adobe Family. 1882</h4>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </article>
-            <!-- End Article -->
-            
-            <!-- Footer -->
-            <footer>
-                <div class="show-more-cube">
-                     <a href="#pages/portfolio/readmore.html" data-destination="plugin-filter-elements" data-insert="appendTo" data-action="remove">
-                        <span>Show<br/>More</span>
-                    </a>
-                </div>
-            </footer>
-            <!-- End footer -->
         </div>
     </div>
-    <!-- END PAGE | WORK -->
-
-    <!-- PAGE | CLIENTS -->
-    <div class="pages page-clients" id="page-clients">
-        <div class="container">
-            <h4 class="line-divider-inline center">Satisfied clients</h4>
-            <!-- Client logos -->
-            <div class="row-fluid">
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-                <div class="span2 center">
-                    <img src="http://placehold.it/180x70" alt="Treble">
-                </div>
-            </div>
-            <!-- Short text related to client's -->
-            <div class="row-fluid">
-                <div class="span8 offset2 center smallFontBy08">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END PAGE | CLIENTS -->
+    <!-- END PAGE | ABOUT -->
     
     <!-- PAGE | FEATURES  -->
     <div class="pages white paralax page-features" id="page-features">
@@ -304,12 +170,12 @@
         <div class="container">
              <!-- Header -->
             <header>
-                <h4 class="line-divider">Features</h4>                
-                <h1>What's Inside</h1>
+                <h4 class="line-divider">Skills & Interests</h4>
+                <h1>Icebreaker 1</h1>
                 <div class="row">
                     <div class="span8 offset2">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Yazılım alışkanlıklarından kısaca bahsetmece, günlük takip ettiğim yerler, hedeflerim, mindset
                         </p>
                     </div>
                 </div>
@@ -322,18 +188,18 @@
                 <div class="row-fluid">
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about01.png" alt="Treble">
-                        <h5>Responsive</h5>
-                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5>Web Developer</h5>
+                        <p class="smallFontBy08 cutBy10">sahibinden ve netaş geçmişinden bahsetmece, back end ağırlıklı eğilimlerin altını çizmece</p>
                     </div>
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about02.png" alt="Treble">
-                        <h5>Bootstrap based</h5>
-                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5>Research based, Graphics and AI</h5>
+                        <p class="smallFontBy08 cutBy10">Heyecan ve istek duyduğumu sezdirmece, open gl ve poker agent geçmişimden bahsetmece </p>
                     </div>
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about03.png" alt="Treble">
-                        <h5>Easy to customize</h5>
-                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5>Big data engineering</h5>
+                        <p class="smallFontBy08 cutBy10">Vallahi söyleyebileceğim çok birşey yok</p>
                     </div>
                 </div>
                 <!-- Testemonials -->
@@ -344,16 +210,16 @@
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
                                     <div class="active item">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        <h5>Happy client</h5>
+                                        <h5>Actively looking for : </h5>
+                                        <p>Gelecek vadeden, ileri görüşlü uzun vadeli projeler</p>
                                     </div>
                                     <div class="item">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        <h5>Happy client</h5>
+                                        <h5>Highly interested in : </h5>
+                                        <p>Back-end contribution to short term side projects</p>
                                     </div>
                                     <div class="item">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        <h5>Happy client</h5>
+                                        <h5>Willing to hear : </h5>
+                                        <p>Job oppurtunities</br></p>
                                     </div>
                                 </div>
                                 <!-- Carousel indicators -->
@@ -371,182 +237,6 @@
         </div>
     </div>
     <!-- END PAGE | FEATURES -->
-
-    <!-- PAGE | ABOUT -->
-    <div class="pages page-about" id="page-about">
-        <div class="container">
-            <!-- Header -->
-            <header>
-                <h4 class="line-divider">About</h4>
-                <h1>Meet The Team</h1>
-                <div class="row">
-                    <div class="span8 offset2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-            </header>
-            <!-- End Header -->
-            
-            <!-- Article -->
-            <article>
-                <!-- List of people and description with their contact details which are visable on hover -->
-                <ul class="thumbnails about-items">
-                    <li class="span4 center">
-                         <div class="item">
-                            <!-- Team member image -->
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            
-                            <!-- Team memeber details, activated on hover -->
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Team member name and function -->
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        
-                        <!-- Team member short info -->
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="span4 center">
-                        <div class="item">
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="span4 center">
-                        <div class="item">
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="span4 center">
-                        <div class="item">
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="span4 center">
-                         <div class="item">
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                    <li class="span4 center">
-                         <div class="item">
-                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h5>
-                            Joanna doe<br/>
-                            <small>Creative director</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                    </li>
-                </ul>
-            </article>
-            <!-- End Article -->
-        </div>
-    </div>
-    <!-- END PAGE | ABOUT -->
-    
-    <!-- PAGE | TWITTER -->
-    <div class="pages white paralax page-twitter" id="page-twitter">
-        <!-- Page overlay -->
-        <div class="overlay"></div>
-        
-        <!-- Block content -->
-        <div class="container">
-             <div class="row-fluid">
-                <div class="span8 offset2">
-                    <div class="twitter-devider"></div>
-                    <!-- Load Twitter boostrap container -->
-                    <div class="twitterfeed center slide" id="twitterfeed-slider"></div>
-                    
-                    <!-- Sub title / Name of twitter account -->
-                    <h5 class="center">@TheGridelicous</h5>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- END PAGE | TWITTER -->
     
     <!-- PAGE | BLOG -->
     <div class="pages page-blog" id="page-blog">
@@ -595,92 +285,29 @@
                 <!-- Blog articles -->
                 <ul class="thumbnails">
                     <!-- Blog post -->
+                    #foreach($item in $blogThumbnailList)
                     <li class="span4">
                     
                         <!-- Blog image -->
-                        <a href="blog/blog_1.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
+                        <a href="$item.getNavigationAddress()">
+                            <img src="$item.getImageLocation()"/>
                         </a>
                         
                         <!-- Blog title -->
                         <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
+                            $item.getTitle()<br/>
+                            <small>$item.getDate()</small>
                         </h5>
                         
                         <!-- Blog post description -->
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <p class="smallFontBy08">$item.getSummary()</p>
                         
                         <!-- Blog read more -->
                         <div class="read-more">
-                            <a href="blog/blog_1.html">Read More...</a>
+                            <a href="$item.getNavigationAddress()">Read More...</a>
                         </div>
                     </li>
-                    <li class="span4">
-                        <a href="blog/blog_2.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                        <div class="read-more">
-                            <a href="blog/blog_2.html">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="blog/blog_3.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                        <div class="read-more">
-                            <a href="blog/blog_3.html">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="blog/blog_4.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                        <div class="read-more">
-                            <a href="blog/blog_4.html">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="blog/blog_5.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                        <div class="read-more">
-                            <a href="blog/blog_5.html">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="blog/blog_6.html">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                        <div class="read-more">
-                            <a href="blog/blog_6.html">Read More...</a>
-                        </div>
-                    </li>
+                    #end
                 </ul>
             </article>
             <!-- End Article -->
@@ -707,7 +334,7 @@
                 <div class="row">
                     <div class="span8 offset2">
                         <p>
-                            We like to create things with fun, open-minded people. Feel free to say hello! We'll respond as soon as possible.
+                            İletişime geçmek adına cesaret verici bazı bazı sözler
                         </p>
                     </div>
                 </div>
@@ -730,13 +357,13 @@
                     <!-- End Contact form -->
                     <!-- Contact information -->
                     <div class="span5 offset1">
-                        <h5>Meet Us</h5>
+                        <h5>GET IN TOUCH</h5>
                         <div class="media">
                             <div class="social-icons sicon-white pull-left">
                                 <a href="#" class="sicon-phone"><i>Phone</i></a>
                             </div> 
                             <div class="media-body smallFontBy08">
-                                (+1) 502 964-0393 | (+1) 502 964-0393 (FAX)
+                                (+90) 539 597-7129
                             </div>
                         </div>
                         <div class="media">
@@ -744,7 +371,7 @@
                                 <a href="#" class="sicon-place"><i>Location</i></a>
                             </div> 
                             <div class="media-body smallFontBy08">
-                                1095 Columbus Ave., San Francisco, CA 94133
+                                Ataturk mah. Atasehir / Istanbul
                             </div>
                         </div>
                         <div class="media">
@@ -752,7 +379,7 @@
                                 <a href="#" class="sicon-mail"><i>email</i></a>
                             </div> 
                             <div class="media-body smallFontBy08">
-                                mail@crollify.com
+                                dogancemgunduz@gmail.com
                             </div>
                         </div>
                         <div class="media">
@@ -760,7 +387,7 @@
                                 <a href="#" class="sicon-clock"><i>Time zone</i></a>
                             </div> 
                             <div class="media-body smallFontBy08">
-                                UTC / GMT -5
+                                UTC / GMT -2
                             </div>
                         </div>
                         <br/>
