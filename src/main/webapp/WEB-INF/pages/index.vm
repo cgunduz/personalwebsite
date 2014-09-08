@@ -15,6 +15,42 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="../assets/images/ico/favicon.png">
+
+
+      <!-- JQUERY -->
+      <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+      <script type="text/javascript" >
+
+          $(document).ready(function() {
+
+              $('#sendMailForm').submit(function(event) {
+
+                  var title = $('#title').val();
+                  var emailAddress = $('#emailAddress').val();
+                  var content = $('#content').val();
+                  var json = { "title" : title, "emailAddress" : emailAddress, "content": content};
+
+                  $.ajax({
+                      url: $("#sendMailForm").attr("action"),
+                      data: JSON.stringify(json),
+                      type: "POST",
+
+                      success: function() {
+
+                          var respContent = "<span class='success'>Done</span>";
+
+                          $("#submitMailButton").html('Got it !');
+                          $("#submitMailButton").prop('disabled', 'true');
+                      }
+                  });
+
+                  event.preventDefault();
+              });
+
+          });
+
+      </script>
                                    
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="../assets/style/bootstrap.css" type="text/css" />
@@ -258,22 +294,22 @@
                 <nav class="submenu">
                     <ul>
                         <li>
-                            <a href="blog/blog.html">All</a>
+                            <a href="blog">All</a>
                         </li>
                         <li>
-                            <a href="blog/blog.html">Technology</a>
+                            <a href="blog">Technology</a>
                         </li>
                         <li>
-                            <a href="blog/blog.html">Design</a>
+                            <a href="blog">Design</a>
                         </li>
                         <li>
-                            <a href="blog/blog.html">Future trends</a>
+                            <a href="blog">Future trends</a>
                         </li>
                         <li>
-                            <a href="blog/blog.html">Photography</a>
+                            <a href="blog">Photography</a>
                         </li>
                         <li>
-                            <a href="blog/blog.html">Other</a>
+                            <a href="blog">Other</a>
                         </li>
                     </ul>
                 </nav>
@@ -316,7 +352,7 @@
             <footer>
                 <!-- More blog posts -->
                 <div class="show-more-cube">
-                    <a href="blog/blog.html"><span>All Blog<br/>Posts</span></a>
+                    <a href="blog"><span>All Blog<br/>Posts</span></a>
                 </div>
             </footer>
             <!-- End Footer -->
@@ -346,12 +382,13 @@
                 <div class="row-fluid">
                     <!-- Contact form -->
                     <div class="span6">
-                        <h5>$message</h5>
-                        <form>
-                            <input type="text" class="span12" placeholder="Title" required="required">
-                            <input type="email" class="span12" placeholder="Email" required="required">
-                            <textarea rows="10" class="span12" required="required"></textarea>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                        <h5>Send Email</h5>
+                        <form id="sendMailForm" method="POST"  action="/sendEmail">
+                            #springFormInput("email.title" "placeholder='Title' class=span12 required=required")
+                            #springFormInput("email.emailAddress" "placeholder='Email' class=span12 required=required")
+                            #springFormTextarea("email.content" "rows=10 class=span12 required=required")
+
+                            <button id="submitMailButton" type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                     <!-- End Contact form -->
@@ -416,11 +453,9 @@
     </div>
     <!-- END PAGE | CONTACT -->
     
-    
-    <!-- JQUERY -->
-    <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-    
-    
+
+
+
     <!-- TWITTER BOOTSTRAP -->
     <script src="../assets/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <!--[if lt IE 9]>

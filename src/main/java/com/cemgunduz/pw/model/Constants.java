@@ -1,4 +1,4 @@
-package com.cemgunduz.model;
+package com.cemgunduz.pw.model;
 
 /**
  * Created by cgunduz on 8/22/14.

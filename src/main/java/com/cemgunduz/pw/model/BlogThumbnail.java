@@ -1,4 +1,4 @@
-package com.cemgunduz.model;
+package com.cemgunduz.pw.model;
 
 import java.util.Date;
 

@@ -201,10 +201,10 @@
                         <h6>Lates blog posts</h6>
                         <ul class="simple-link-list">
                             <li>
-                                <a href="blog_1.html" class="active">Blog post title 1</a>
+                                <a href="blog/1" class="active">Blog post title 1</a>
                             </li>
                             <li>
-                                <a href="blog_2.html">Blog post title 2</a>
+                                <a href="blog/2">Blog post title 2</a>
                             </li>
                             <li>
                                 <a href="blog_3.html">Blog post title 3</a>

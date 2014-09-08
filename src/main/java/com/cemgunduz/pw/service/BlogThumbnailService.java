@@ -1,6 +1,6 @@
-package com.cemgunduz.service;
+package com.cemgunduz.pw.service;
 
-import com.cemgunduz.model.BlogThumbnail;
+import com.cemgunduz.pw.model.BlogThumbnail;
 
 import java.util.List;
 

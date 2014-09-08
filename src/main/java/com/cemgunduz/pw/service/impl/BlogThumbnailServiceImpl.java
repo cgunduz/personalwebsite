@@ -1,7 +1,7 @@
-package com.cemgunduz.service.impl;
+package com.cemgunduz.pw.service.impl;
 
-import com.cemgunduz.model.BlogThumbnail;
-import com.cemgunduz.service.BlogThumbnailService;
+import com.cemgunduz.pw.model.BlogThumbnail;
+import com.cemgunduz.pw.service.BlogThumbnailService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
