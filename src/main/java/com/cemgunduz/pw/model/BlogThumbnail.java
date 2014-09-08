@@ -1,5 +1,7 @@
 package com.cemgunduz.pw.model;
 
+import com.cemgunduz.pw.model.constants.Constants;
+
 import java.util.Date;
 
 /**

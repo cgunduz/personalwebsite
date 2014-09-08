@@ -35,10 +35,9 @@
                       url: $("#sendMailForm").attr("action"),
                       data: JSON.stringify(json),
                       type: "POST",
+                      contentType: 'application/json',
 
                       success: function() {
-
-                          var respContent = "<span class='success'>Done</span>";
 
                           $("#submitMailButton").html('Got it !');
                           $("#submitMailButton").prop('disabled', 'true');
@@ -294,22 +293,22 @@
                 <nav class="submenu">
                     <ul>
                         <li>
-                            <a href="blog">All</a>
+                            <a href="blog/blog.html">All</a>
                         </li>
                         <li>
-                            <a href="blog">Technology</a>
+                            <a href="blog/blog.html">Technology</a>
                         </li>
                         <li>
-                            <a href="blog">Design</a>
+                            <a href="blog/blog.html">Design</a>
                         </li>
                         <li>
-                            <a href="blog">Future trends</a>
+                            <a href="blog/blog.html">Future trends</a>
                         </li>
                         <li>
-                            <a href="blog">Photography</a>
+                            <a href="blog/blog.html">Photography</a>
                         </li>
                         <li>
-                            <a href="blog">Other</a>
+                            <a href="blog/blog.html">Other</a>
                         </li>
                     </ul>
                 </nav>
@@ -352,7 +351,7 @@
             <footer>
                 <!-- More blog posts -->
                 <div class="show-more-cube">
-                    <a href="blog"><span>All Blog<br/>Posts</span></a>
+                    <a href="blog/blog.html"><span>All Blog<br/>Posts</span></a>
                 </div>
             </footer>
             <!-- End Footer -->

@@ -100,6 +100,20 @@
             <version>2.0</version>
         </dependency>
 
+        <!-- Mongo -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>1.4.0.RELEASE</version>
+        </dependency>
+
+        <!-- Automatically turn json into object -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
     </dependencies>
 
     <build>

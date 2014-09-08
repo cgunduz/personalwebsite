@@ -1,6 +1,6 @@
 package com.cemgunduz.pw.controller;
 
-import com.cemgunduz.pw.model.Constants;
+import com.cemgunduz.pw.model.constants.Constants;
 import com.cemgunduz.pw.model.Email;
 import com.cemgunduz.pw.service.BlogThumbnailService;
 import com.cemgunduz.pw.service.EmailService;
@@ -43,9 +43,8 @@ public class HomePageController {
 		return Constants.URI.HOMEPAGE;
 	}
 
-    @RequestMapping(value = "/sendEmail", method = RequestMethod.POST)
-    public ModelAndView sendEmail(@ModelAttribute("email")Email email,
-                            ModelMap model)
+    @RequestMapping(value = "/sendEmail", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    public ModelAndView sendEmail(ModelMap model, @RequestBody Email email)
     {
         emailService.save(email);
         return new ModelAndView(Constants.URI.HOMEPAGE);
