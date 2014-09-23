@@ -13,7 +13,8 @@ public class Constants {
 
     public static class URI
     {
-        public static final String HOMEPAGE = "index";
-        public static final String BLOG = "blog/blog";
+        public static final String HOMEPAGE      = "index";
+        public static final String BLOG_MAIN     = "blog/main";
+        public static final String BLOG_SPECIFIC = "blog/entry";
     }
 }

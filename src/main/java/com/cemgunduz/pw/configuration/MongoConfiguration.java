@@ -1,5 +1,7 @@
 package com.cemgunduz.pw.configuration;
 
+import com.cemgunduz.pw.dao.BlogEntryDao;
+import com.cemgunduz.pw.dao.CommentDao;
 import com.cemgunduz.pw.dao.EmailDao;
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
@@ -17,7 +19,7 @@ import java.net.UnknownHostException;
  */
 @Configuration
 @EnableMongoRepositories(basePackages = "com.cemgunduz.*",
-        includeFilters = @ComponentScan.Filter(value = {EmailDao.class},
+        includeFilters = @ComponentScan.Filter(value = {EmailDao.class, BlogEntryDao.class, CommentDao.class},
                 type = FilterType.ASSIGNABLE_TYPE))
 public class MongoConfiguration {
 

@@ -1,0 +1,42 @@
+<nav class="fixed-top fixed-visable" id="navigation">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12 center">
+                <!-- LOGO -->
+                <a class="brand pull-left" href="../../">
+                    <img src="../../assets/images/logo.png" alt="Treble">
+                </a>
+                <!-- END LOGO -->
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+                <!-- END MOBILE MENU BUTTON -->
+
+                <!-- MAIN MENU -->
+                <ul id="main-menu" class="nav-collapse collapse">
+                    <li><a href="../../#page-welcome">Home</a></li>
+                    <li><a href="../../#page-about">About</a></li>
+                    <li><a href="../../#page-features">Skills & Interests</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="../../#page-blog">Blog</a></li>
+                    <li><a href="../../#page-contact">Contact</a></li>
+                </ul>
+                <!-- END MAIN MENU -->
+
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons hover-big pull-right">
+                    <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                    <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                    <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                    <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                    <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
+                </div>
+                <!-- END SOCIAL ICONS -->
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,30 @@
+<div class="span4 blog-list-right">
+
+    <!-- Latest blog posts block -->
+    <div class="block">
+        <h6>Latest blog posts</h6>
+        <ul class="simple-link-list">
+            #foreach($blogSummary in $latestBlogEntryList)
+                <li>
+                    <a href="/blog/entry/$blogSummary.id">$blogSummary.title</a>
+                </li>
+            #end
+        </ul>
+    </div>
+
+    <!-- Tags -->
+    <div class="block">
+        <h6>Categories</h6>
+        <nav class="submenu">
+            <ul>
+                #foreach($category in $categories)
+                    <li>
+                        <a href="/blog?categoryOrdinal=$category.ordinal()" class="active">$category.toString()</a>
+                    </li>
+                #end
+
+
+            </ul>
+        </nav>
+    </div>
+</div>

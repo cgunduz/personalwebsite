@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 /**
  * Created by cgunduz on 9/8/14.
  */
-public interface EmailDao extends MongoRepository<Email,Long>{
+public interface EmailDao extends MongoRepository<Email,String>{
 
 }

@@ -1,0 +1,92 @@
+<!-- PAGE | CONTACT -->
+<div class="pages black-bg white page-contact" id="page-contact">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h4 class="line-divider">Contact</h4>
+            <h1>Say hello!</h1>
+            <div class="row">
+                <div class="span8 offset2">
+                    <p>
+                        İletişime geçmek adına cesaret verici bazı bazı sözler
+                    </p>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Article -->
+        <article>
+            <div class="row-fluid">
+                <!-- Contact form -->
+                <div class="span6">
+                    <h5>Send Email</h5>
+                    <form id="sendMailForm" method="POST"  action="/sendEmail">
+                        #springFormInput("email.title" "placeholder='Title' class=span12 required=required")
+                        #springFormInput("email.emailAddress" "placeholder='Email' class=span12 required=required")
+                        #springFormTextarea("email.content" "rows=10 class=span12 required=required")
+
+                        <button id="submitMailButton" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <!-- End Contact form -->
+                <!-- Contact information -->
+                <div class="span5 offset1">
+                    <h5>GET IN TOUCH</h5>
+                    <div class="media">
+                        <div class="social-icons sicon-white pull-left">
+                            <a href="#" class="sicon-phone"><i>Phone</i></a>
+                        </div>
+                        <div class="media-body smallFontBy08">
+                            (+90) 539 597-7129
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="social-icons sicon-white pull-left">
+                            <a href="#" class="sicon-place"><i>Location</i></a>
+                        </div>
+                        <div class="media-body smallFontBy08">
+                            Ataturk mah. Atasehir / Istanbul
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="social-icons sicon-white pull-left">
+                            <a href="#" class="sicon-mail"><i>email</i></a>
+                        </div>
+                        <div class="media-body smallFontBy08">
+                            dogancemgunduz@gmail.com
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="social-icons sicon-white pull-left">
+                            <a href="#" class="sicon-clock"><i>Time zone</i></a>
+                        </div>
+                        <div class="media-body smallFontBy08">
+                            UTC / GMT -2
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h5>Get social</h5>
+                    <div class="social-icons sicon-white bordered">
+                        <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                        <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                        <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                        <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                        <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
+                    </div>
+                </div>
+                <!-- End Contact information -->
+            </div>
+        </article>
+        <!-- End Article -->
+
+    </div>
+
+    <!-- Background map image -->
+    <div id="map-image">
+        <img src="../assets/images/pages/contact/map_bck.jpg" alt="Treble">
+    </div>
+</div>
+<!-- END PAGE | CONTACT -->

@@ -14,10 +14,14 @@ public class Comment {
     @Id
     private String id;
 
+    private String blogId;
+
     private String commentSource;
     private Date date;
     private String content;
     private String imageSource;
+
+    private Boolean approved = false;
 
     public String getId() {
         return id;
@@ -57,5 +61,21 @@ public class Comment {
 
     public void setImageSource(String imageSource) {
         this.imageSource = imageSource;
+    }
+
+    public String getBlogId() {
+        return blogId;
+    }
+
+    public void setBlogId(String blogId) {
+        this.blogId = blogId;
+    }
+
+    public Boolean getApproved() {
+        return approved;
+    }
+
+    public void setApproved(Boolean approved) {
+        this.approved = approved;
     }
 }

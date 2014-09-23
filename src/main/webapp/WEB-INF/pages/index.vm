@@ -168,11 +168,11 @@
                             <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
                             <div class="about-overlay img-circle">
                                 <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                    <a href="https://www.facebook.com/dogan.c.gunduz" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="https://twitter.com/dcgunduz" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="http://tr.linkedin.com/pub/do%C4%9Fan-cem-g%C3%BCnd%C3%BCz/50/873/3b9" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="https://github.com/cgunduz" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="http://stackoverflow.com/users/628469/pumpkin" class="sicon-pinterest"><i>Pinterest</i></a>
                                 </div>
                             </div>
                         </div>
@@ -292,24 +292,11 @@
                 <!-- Sub menu -->
                 <nav class="submenu">
                     <ul>
+                        #foreach($category in $categories)
                         <li>
-                            <a href="blog/blog.html">All</a>
+                            <a href="blog?categoryOrdinal=$category.ordinal()">$category.toString()</a>
                         </li>
-                        <li>
-                            <a href="blog/blog.html">Technology</a>
-                        </li>
-                        <li>
-                            <a href="blog/blog.html">Design</a>
-                        </li>
-                        <li>
-                            <a href="blog/blog.html">Future trends</a>
-                        </li>
-                        <li>
-                            <a href="blog/blog.html">Photography</a>
-                        </li>
-                        <li>
-                            <a href="blog/blog.html">Other</a>
-                        </li>
+                        #end
                     </ul>
                 </nav>
             </header>
@@ -351,7 +338,7 @@
             <footer>
                 <!-- More blog posts -->
                 <div class="show-more-cube">
-                    <a href="blog/blog.html"><span>All Blog<br/>Posts</span></a>
+                    <a href="blog"><span>All Blog<br/>Posts</span></a>
                 </div>
             </footer>
             <!-- End Footer -->

@@ -114,6 +114,14 @@
             <version>1.9.13</version>
         </dependency>
 
+        <!-- Cleaining html content and stuff -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

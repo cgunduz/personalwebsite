@@ -19,14 +19,20 @@ public class BlogEntry {
 
     private String title;
     private String author;
+    private String authorLink;
     private Date date;
     private String htmlContent;
 
-    private List<String> categoryIdList = new ArrayList<String>();
+    private String imageLocation;
+
+    private List<Long> categoryIdList = new ArrayList<Long>();
     private List<String> commentIdList = new ArrayList<String>();
 
     @Transient
     private BlogThumbnail blogEntryThumbnail;
+
+    @Transient
+    private List<Comment> commentList;
 
     public String getId() {
         return id;
@@ -60,11 +66,11 @@ public class BlogEntry {
         this.date = date;
     }
 
-    public List<String> getCategoryIdList() {
+    public List<Long> getCategoryIdList() {
         return categoryIdList;
     }
 
-    public void setCategoryIdList(List<String> categoryIdList) {
+    public void setCategoryIdList(List<Long> categoryIdList) {
         this.categoryIdList = categoryIdList;
     }
 
@@ -90,5 +96,29 @@ public class BlogEntry {
 
     public void setBlogEntryThumbnail(BlogThumbnail blogEntryThumbnail) {
         this.blogEntryThumbnail = blogEntryThumbnail;
+    }
+
+    public List<Comment> getCommentList() {
+        return commentList;
+    }
+
+    public void setCommentList(List<Comment> commentList) {
+        this.commentList = commentList;
+    }
+
+    public String getImageLocation() {
+        return imageLocation;
+    }
+
+    public void setImageLocation(String imageLocation) {
+        this.imageLocation = imageLocation;
+    }
+
+    public String getAuthorLink() {
+        return authorLink;
+    }
+
+    public void setAuthorLink(String authorLink) {
+        this.authorLink = authorLink;
     }
 }

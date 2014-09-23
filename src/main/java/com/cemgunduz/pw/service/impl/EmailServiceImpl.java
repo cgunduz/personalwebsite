@@ -28,6 +28,8 @@ public class EmailServiceImpl implements EmailService
     @Override
     public void save(Email email) {
 
+        // TODO : Implement sending of an email
+
         emailDao.save(email);
     }
 }
