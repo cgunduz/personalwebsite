@@ -48,9 +48,9 @@ public class BlogThumbnailServiceImpl implements BlogThumbnailService {
             BlogThumbnail blogThumbnail = new BlogThumbnail();
             blogThumbnail.setTitle(blogEntry.getTitle());
             blogThumbnail.setDate(blogEntry.getDate());
-            blogThumbnail.setImageLocation("assets/images/logo.png");
+            blogThumbnail.setImageLocation(blogEntry.getImageLocation());
             blogThumbnail.setSummary(Jsoup.clean(blogEntry.getHtmlContent(), Whitelist.none()));
-            blogThumbnail.setNavigationAddress(Constants.URI.BLOG_SPECIFIC.concat("?id=").concat(blogEntry.getId()));
+            blogThumbnail.setNavigationAddress(Constants.URI.BLOG_SPECIFIC.concat("/").concat(blogEntry.getId()));
 
             result.add(blogThumbnail);
         }

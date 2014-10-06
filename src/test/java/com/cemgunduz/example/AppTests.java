@@ -1,8 +1,12 @@
 package com.cemgunduz.example;
 
 import com.cemgunduz.pw.dao.BlogEntryDao;
+import com.cemgunduz.pw.dao.CommentDao;
 import com.cemgunduz.pw.dao.EmailDao;
 import com.cemgunduz.pw.model.BlogEntry;
+import com.cemgunduz.pw.model.Comment;
+import com.cemgunduz.pw.service.BlogService;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +30,13 @@ public class AppTests {
     @SuppressWarnings(value = "all")
     private BlogEntryDao blogEntryDao;
 
+    @Autowired
+    private BlogService blogService;
+
+    @Autowired
+    @SuppressWarnings(value="all")
+    private CommentDao commentDao;
+
     @Test
     public void mongoTest()
     {
@@ -44,5 +55,24 @@ public class AppTests {
 
         blogEntryDao.save(blogEntry);
         List<BlogEntry> blogEntries = blogEntryDao.findAll();
+    }
+
+    @Test
+    @Ignore
+    public void persistComment()
+    {
+        List<BlogEntry> blogEntries = blogService.getBlogEntries(3);
+        for(BlogEntry blogEntry : blogEntries)
+        {
+            Comment comment = new Comment();
+            comment.setApproved(true);
+            comment.setBlogId(blogEntry.getId());
+            comment.setCommentSource("Cem Gündüz");
+            comment.setCommentSourceLink("http://www.google.com");
+            comment.setCommentContent("Deneme comment deneme comment deneme comment");
+            comment.setDate(new Date());
+            comment.setImageSource("../assets/images/logo.png");
+            commentDao.save(comment);
+        }
     }
 }

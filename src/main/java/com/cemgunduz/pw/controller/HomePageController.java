@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -82,6 +83,14 @@ public class HomePageController {
 
         model.addAttribute("email", new Email());
 
+        model.addAttribute("blogId", blogId);
+
+        // Init the comment
+        Comment comment = new Comment();
+        comment.setBlogId(blogId);
+        comment.setApproved(false);
+        model.addAttribute("comment", comment);
+
         return Constants.URI.BLOG_SPECIFIC;
     }
 
@@ -100,7 +109,16 @@ public class HomePageController {
     @RequestMapping(value = "/sendEmail", method = RequestMethod.POST, headers = {"Content-type=application/json"})
     public ModelAndView sendEmail(ModelMap model, @RequestBody Email email)
     {
+        email.setDate(new Date());
         emailService.save(email);
         return new ModelAndView(Constants.URI.HOMEPAGE);
+    }
+
+    @RequestMapping(value = "/sendComment", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    public ModelAndView sendCommment(ModelMap model, @RequestBody Comment comment)
+    {
+        comment.setDate(new Date());
+        blogService.saveComment(comment);
+        return new ModelAndView(Constants.URI.BLOG_SPECIFIC);
     }
 }

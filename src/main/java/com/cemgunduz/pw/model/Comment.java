@@ -17,14 +17,23 @@ public class Comment {
     private String blogId;
 
     private String commentSource;
+    private String commentSourceLink;
     private Date date;
-    private String content;
+    private String commentContent;
     private String imageSource;
 
     private Boolean approved = false;
 
     public String getId() {
         return id;
+    }
+
+    public String getCommentSourceLink() {
+        return commentSourceLink;
+    }
+
+    public void setCommentSourceLink(String commentSourceLink) {
+        this.commentSourceLink = commentSourceLink;
     }
 
     public void setId(String id) {
@@ -47,12 +56,12 @@ public class Comment {
         this.date = date;
     }
 
-    public String getContent() {
-        return content;
+    public String getCommentContent() {
+        return commentContent;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setCommentContent(String commentContent) {
+        this.commentContent = commentContent;
     }
 
     public String getImageSource() {

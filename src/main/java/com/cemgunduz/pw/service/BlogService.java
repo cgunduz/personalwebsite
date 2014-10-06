@@ -47,4 +47,10 @@ public interface BlogService {
      */
     List<Comment> getCommentsByBlogId(String blogId);
 
+    /**
+     * Persists the specified comment for a specific blog entry
+     *
+     * @param comment
+     */
+    void saveComment(Comment comment);
 }

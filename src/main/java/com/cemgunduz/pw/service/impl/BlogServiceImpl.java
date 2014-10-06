@@ -20,7 +20,7 @@ import java.util.List;
  * There is no optimization, total blog count would always be too low
  */
 @Service
-public class BlogServiceImpl implements BlogService  {
+public class BlogServiceImpl implements BlogService {
 
     @Autowired
     @SuppressWarnings(value = "all")
@@ -76,6 +76,15 @@ public class BlogServiceImpl implements BlogService  {
                 commentList.add(candidate);
 
         return commentList;
+    }
+
+    @Override
+    public void saveComment(Comment comment) {
+
+        if(comment.getBlogId() == null)
+            throw new RuntimeException("Assoc blog id is null");
+
+        commentDao.save(comment);
     }
 
     private void initalizeBlogComments(BlogEntry blogEntry)
