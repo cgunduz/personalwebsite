@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Op</title>
+
+    <script type="text/javascript" src="../../assets/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "textarea",
+            plugins: "image spellchecker colorpicker textcolor wordcount code"
+
+        });
+    </script>
+
+</head>
+<body>
+
+<form id="blogOperationForm" method="POST" action="/admin/blogOperations/persist">
+
+    #springFormInput("blogEntry.title" "placeholder='Title' class=span12")
+    #springFormInput("blogEntry.author" "placeholder='Author' class=span12")
+    #springFormInput("blogEntry.authorLink" "class=span12 placeholder='Author s Link'")
+    #springFormInput("blogEntry.imageLocation" "placeholder='Main Image Location' class=span12")
+    #springFormTextarea("blogEntry.htmlContent" "placeholder='At' rows=10 class=span12")
+    #springFormCheckboxes("blogEntry.categoryNameList" $categoryMap " " "")
+
+    <button id="submitBlog" type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</body>
+</html>

@@ -16,5 +16,18 @@ public class Constants {
         public static final String HOMEPAGE      = "index";
         public static final String BLOG_MAIN     = "blog/main";
         public static final String BLOG_SPECIFIC = "blog/entry";
+
+        public static class Admin
+        {
+            public static final String HOME            = "admin/home";
+            public static final String BLOG_OPERATIONS = "admin/blogOperations";
+        }
+
+    }
+
+    public static class AUTHOR
+    {
+        public static final String NAME = "D. Cem Gündüz";
+        public static final String LINK = "www.cemgunduz.com";
     }
 }

@@ -53,4 +53,11 @@ public interface BlogService {
      * @param comment
      */
     void saveComment(Comment comment);
+
+    /**
+     * Persists the given blog according to the supplied categories
+     *
+     * @param blogEntry
+     */
+    void saveBlog(BlogEntry blogEntry);
 }

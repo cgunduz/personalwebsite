@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <a href="/admin/blogOperations">Add New Blog Entry</a>
+    #foreach($blog in $blogEntries)
+        <p>Title : $blog.title</p>
+        <a href="/admin/blogOperations/$blog.id">Update Blog Entry</a>
+    #end
+</body>
+</html>

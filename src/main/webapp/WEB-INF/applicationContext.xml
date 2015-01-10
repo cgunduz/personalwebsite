@@ -31,4 +31,6 @@
                   value="org.springframework.web.servlet.view.velocity.VelocityView" />
     </bean>
 
+    <import resource="spring-security.xml"/>
+
 </beans>

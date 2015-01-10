@@ -1,8 +1,10 @@
 package com.cemgunduz.pw.model;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,6 +13,8 @@ import java.util.List;
 /**
  * Created by cgunduz on 9/8/14.
  */
+@Component
+@Scope("prototype")
 @Document(collection = "BlogEntry")
 public class BlogEntry {
 
@@ -33,6 +37,9 @@ public class BlogEntry {
 
     @Transient
     private List<Comment> commentList;
+
+    @Transient
+    private List<String> categoryNameList = new ArrayList<String>();
 
     public String getId() {
         return id;
@@ -120,5 +127,13 @@ public class BlogEntry {
 
     public void setAuthorLink(String authorLink) {
         this.authorLink = authorLink;
+    }
+
+    public List<String> getCategoryNameList() {
+        return categoryNameList;
+    }
+
+    public void setCategoryNameList(List<String> categoryNameList) {
+        this.categoryNameList = categoryNameList;
     }
 }

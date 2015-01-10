@@ -5,6 +5,7 @@ import com.cemgunduz.pw.dao.CommentDao;
 import com.cemgunduz.pw.model.BlogEntry;
 import com.cemgunduz.pw.model.Comment;
 import com.cemgunduz.pw.model.constants.Category;
+import com.cemgunduz.pw.model.constants.Constants;
 import com.cemgunduz.pw.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -12,6 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -85,6 +87,32 @@ public class BlogServiceImpl implements BlogService {
             throw new RuntimeException("Assoc blog id is null");
 
         commentDao.save(comment);
+    }
+
+    @Override
+    public void saveBlog(BlogEntry blogEntry) {
+
+        // Sort out relevant category ids
+        for(Category category : Category.values())
+        {
+            if(blogEntry.getCategoryNameList().contains(category.toString()))
+            {
+                Integer ordinal = category.ordinal();
+                blogEntry.getCategoryIdList().add(ordinal.longValue());
+            }
+        }
+
+        // Set today as the date of the entry
+        Date now = new Date();
+        blogEntry.setDate(now);
+
+        // Set default author if not provided
+        if(blogEntry.getAuthor() == null) blogEntry.setAuthor(Constants.AUTHOR.NAME);
+
+        // Set default author link if not provided
+        if(blogEntry.getAuthorLink() == null) blogEntry.setAuthorLink(Constants.AUTHOR.LINK);
+
+        blogEntryDao.save(blogEntry);
     }
 
     private void initalizeBlogComments(BlogEntry blogEntry)
