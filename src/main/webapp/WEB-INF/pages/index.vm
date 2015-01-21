@@ -159,7 +159,7 @@
             <!-- Header -->
             <header>
                 <h4 class="line-divider">About</h4>
-                <h1>Dizayn Adına başlıktan vazgeçemedim</h1>
+                <h1>A little about me </h1>
 
                 <div class="row">
                     <ul class="thumbnails about-items">
@@ -185,11 +185,27 @@
 
 
                     <p class="smallFontBy08">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                       </p>
+
+                        Born in Istanbul. 1988. Lived a long portion of my life in kurtkoy where I have recieved my undergraduate degree on cs
+                        from Sabanci University. There I have learned and loved my first programming language c++. I have created some of my
+                        favourite free time projects using it. That included my infamous graphics engine which I used to create a universe of
+                        my own. Sadly though, time drifted us apart, and eventually I broke up with it.
+</br></br>
+                        I found myself on a widely known e-commerce company a week after my graduation from Msc. @ Bogazici University. There
+                        I have mastered my knowledge on all things java. Programming was always a great hobby for me. Fearing that I would lose
+                        this, I resigned just before I lost my soul.
+                        </br></br>
+                        I'm currently working on Netas, doing a project for the government to manage natural crisis, earthquake mostly. In my
+                        spare time, I'm creating automatons to manage my daily life and working on side projects. Also started working on my Ph.D.
+                        </br></br>
+                        I'm a futurist, stargazer, sports, software, sci-fi and action enthusiast. I love all things new, dynamic and interesting.
+                        </br></br>
+                        Have also been told that I can drink quite a lot of tequila. However I have no memory of doing so.
+
+
+
+
+                    </p>
 
                     </ul>
                 </div>
@@ -206,11 +222,15 @@
              <!-- Header -->
             <header>
                 <h4 class="line-divider">Skills & Interests</h4>
-                <h1>Icebreaker 1</h1>
+                <h1>Things I do, Things I love</h1>
                 <div class="row">
                     <div class="span8 offset2">
                         <p>
-                            Yazılım alışkanlıklarından kısaca bahsetmece, günlük takip ettiğim yerler, hedeflerim, mindset
+                            I closely follow the emerging technologies, try them out as often as I can
+                            and do my best to improve myself on a daily basis. I try to be a jack of all
+                            trades but despite my effort it is fair to say I have more knowledge in some
+                            areas than others. I would love to hear from you if you think my skillset is
+                            a match for your needs. You may contact just to say hi, that's also fine =)
                         </p>
                     </div>
                 </div>
@@ -224,12 +244,14 @@
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about01.png" alt="Treble">
                         <h5>Web Developer</h5>
-                        <p class="smallFontBy08 cutBy10">sahibinden ve netaş geçmişinden bahsetmece, back end ağırlıklı eğilimlerin altını çizmece</p>
+                        <p class="smallFontBy08 cutBy10">Worked in sahibinden.com & netas as a back end java developer.
+                            Have quite a bit of knowledge there. Strictly would like to remain in web domain.</p>
                     </div>
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about02.png" alt="Treble">
                         <h5>Research based, Graphics and AI</h5>
-                        <p class="smallFontBy08 cutBy10">Heyecan ve istek duyduğumu sezdirmece, open gl ve poker agent geçmişimden bahsetmece </p>
+                        <p class="smallFontBy08 cutBy10">Created my own poker agent, on top of other automatons and
+                            had my most fun working on my space simulator. Topics regarding graphics and ai are great interests of mine. </p>
                     </div>
                     <div class="span4 center">
                         <img src="../assets/images/pages/features/about03.png" alt="Treble">
@@ -246,7 +268,7 @@
                                 <div class="carousel-inner">
                                     <div class="active item">
                                         <h5>Actively looking for : </h5>
-                                        <p>Gelecek vadeden, ileri görüşlü uzun vadeli projeler</p>
+                                        <p>Visionary, far sighted, long term projects</p>
                                     </div>
                                     <div class="item">
                                         <h5>Highly interested in : </h5>
@@ -356,7 +378,8 @@
                 <div class="row">
                     <div class="span8 offset2">
                         <p>
-                            İletişime geçmek adına cesaret verici bazı bazı sözler
+                            Got something on your mind ? Or just want to say hello?
+                            </br>Mail me, call me or just fill the box below.
                         </p>
                     </div>
                 </div>

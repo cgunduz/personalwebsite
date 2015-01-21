@@ -41,9 +41,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public List<BlogEntry> getBlogEntries(int count) {
 
-        // blogentryDao.count
+        PageRequest pageRequest = new PageRequest(0, count,
+                new Sort(Sort.Direction.DESC, "date"));
 
-        return blogEntryDao.findAll(new PageRequest(0, count)).getContent();
+        return blogEntryDao.findAll(pageRequest).getContent();
 
     }
 

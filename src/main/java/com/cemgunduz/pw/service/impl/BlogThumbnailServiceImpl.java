@@ -49,7 +49,7 @@ public class BlogThumbnailServiceImpl implements BlogThumbnailService {
             blogThumbnail.setTitle(blogEntry.getTitle());
             blogThumbnail.setDate(blogEntry.getDate());
             blogThumbnail.setImageLocation(blogEntry.getImageLocation());
-            blogThumbnail.setSummary(Jsoup.clean(blogEntry.getHtmlContent(), Whitelist.none()));
+            blogThumbnail.setSummary(Jsoup.clean(blogEntry.getHtmlContent(), Whitelist.none()).substring(0,20).concat("..."));
             blogThumbnail.setNavigationAddress(Constants.URI.BLOG_SPECIFIC.concat("/").concat(blogEntry.getId()));
 
             result.add(blogThumbnail);
