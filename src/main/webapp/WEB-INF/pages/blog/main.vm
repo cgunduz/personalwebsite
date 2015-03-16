@@ -87,7 +87,7 @@
                     <article>
                         <!-- Blog image -->
                         <a href="/blog/entry/$blogEntry.id">
-                        #if($blogEntry.imageLocation && false)
+                        #if($blogEntry.imageLocation)
                             <img src=$blogEntry.imageLocation>
                         #else
                             <img src="http://placehold.it/900x450">
